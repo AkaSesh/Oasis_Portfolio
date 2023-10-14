@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Tesfaye</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn font icon css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-s"></i>
+                    <div class="logo-text">Samuel Tesfaye</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#" class="active">Services</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="./Picture/YoungSami.jpg" alt="Profile Pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Samuel Tesfaye</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                       Fugiat cumque numquam, officiis animi eligendi quasi, hic aperiam molestias eveniet odit,
+                       impedit doloribus voluptates exercitationem pariatur nihil veniam aliquid necessitatibus veritatis.
+                    </p>
+                    
+                    <div class="btn-group">
+                        <a href="#" class="btn">My story<i class="fa-brands fa-arrow"></i></a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <!--Typed JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector("navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input", {
+            strings:["Frontend Developer", "UX/UI Designer", "Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+    </script>
+    <div class="about" id="about">
+        <div class="column">
+        <p style="font-size: small; color: rgb(150, 150, 250);">- Contact</p>
+        <br>
+        <p style="font-size: x-large; color: rgb(150, 150, 250);">Any type of query and dicussion</p>
+            <p style="color: rgb(150, 150, 250);">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Maxime dicta provident nesciunt dolorum laudantium,
+                recusandae omnis placeat iusto laboriosam eos officiis facilis? Rerum ipsum,
+                quos dolores aliquid quod aperiam ullam.
+            </p>
+            <br>
+            <a href="#" class="btn">hi@carlos.com  <i class="fa-brands fa-arrow"></i></a>
+        </div>
+        <div class="column">
+        <br>
+        <p style="font-size: x-large; color: rgb(150, 150, 250);">You cant use creativity, The more you use,<br>More you have in your significant mind</p> 
+        <p style="color: rgb(150, 150, 250);">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Maxime dicta provident nesciunt dolorum laudantium,
+            recusandae omnis placeat iusto laboriosam eos officiis facilis? Rerum ipsum,
+            quos dolores aliquid quod aperiam ullam.
+        </p>
+        <br>
+        <p class="component" style="font-size: xx-large; color: rgb(150, 150, 250);">14<span style="font-size: medium;">Years of experience</span></p>
+        <p class="component" style="font-size: xx-large; color: rgb(150, 150, 250);">187<span style="font-size: medium;">Satisfied clients</span></p><br>
+        </div>
+    </div>
+    
+
+</body>
+</html>
